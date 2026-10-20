@@ -117,7 +117,3 @@ body.purple{--accent:var(--purple);--accent-d:var(--purple-d);--accent-l:var(--p
 .top{position:sticky;top:0;z-index:20}
 .top .bar,.top .tabs{position:static}
 @media print{.top{display:none}}
-.embed{margin:1rem 0}
-.embed iframe{width:100%;height:80vh;min-height:560px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-top:.6rem}
-.embed .hint{font-size:.92rem;color:var(--muted)}
-button.btn{font:inherit;font-weight:600;border:0;cursor:pointer}
