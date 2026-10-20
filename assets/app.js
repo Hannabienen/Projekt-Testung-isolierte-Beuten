@@ -12,3 +12,4 @@
   if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
 })();
 document.querySelectorAll('table').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th'),function(x){return x.textContent});t.querySelectorAll('tbody tr').forEach(function(r){[].forEach.call(r.children,function(c,i){if(h[i]&&i>0)c.setAttribute('data-l',h[i])})})});
+(function(){var b=document.getElementById('openEmbed');if(!b)return;var box=document.getElementById('embedBox'),f=box.querySelector('iframe');b.addEventListener('click',function(){if(box.hidden){if(!f.src)f.src=b.getAttribute('data-src');box.hidden=false;b.textContent='Fragebogen ausblenden'}else{box.hidden=true;b.textContent='Fragebogen direkt hier auf der Seite ausfüllen'}})})();
